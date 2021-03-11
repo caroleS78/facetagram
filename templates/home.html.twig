@@ -1,0 +1,91 @@
+{% extends 'navbar.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+<link href="{{asset('/css/theme.css')}}" rel="stylesheet" media="all">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
+{% endblock %}
+{% block contenuPrincipal %}
+    {{ parent() }}
+<div class="overview-wrap">
+<h2 class="title-1">Bienvenue dans mon site</h2>
+<button class="au-btn au-btn-icon au-btn--blue">
+<i class="zmdi zmdi-plus"></i><a href="{{ path("a_propos") }}" class="text-dark">Profil de James</a></button>
+</div>
+
+
+
+<div class="row m-t-25">
+<div class="col-sm-6 col-lg-3">
+<div class="overview-item overview-item--c1">
+<div class="overview__inner">
+<div class="overview-box clearfix">
+<div class="icon">
+<i class="zmdi zmdi-account-o"></i>
+</div>
+<div class="text">
+<h2>10368</h2>
+<span>members online</span>
+</div>
+</div>
+<div class="overview-chart"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="widgetChart1" height="195" style="display: block; height: 130px; width: 206px;" width="309" class="chartjs-render-monitor"></canvas>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+<div class="overview-item overview-item--c2">
+<div class="overview__inner">
+<div class="overview-box clearfix">
+<div class="icon">
+<i class="zmdi zmdi-shopping-cart"></i>
+</div>
+<div class="text">
+<h2>388,688</h2>
+<span>items solid</span>
+</div>
+</div>
+<div class="overview-chart"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="widgetChart2" height="172" style="display: block; height: 115px; width: 206px;" width="309" class="chartjs-render-monitor"></canvas>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+<div class="overview-item overview-item--c3">
+<div class="overview__inner">
+<div class="overview-box clearfix">
+<div class="icon">
+<i class="zmdi zmdi-calendar-note"></i>
+</div>
+<div class="text">
+<h2>1,086</h2>
+<span>this week</span>
+</div>
+</div>
+<div class="overview-chart"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="widgetChart3" height="172" style="display: block; height: 115px; width: 206px;" width="309" class="chartjs-render-monitor"></canvas>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-sm-6 col-lg-3">
+<div class="overview-item overview-item--c4">
+<div class="overview__inner">
+<div class="overview-box clearfix">
+<div class="icon">
+<i class="zmdi zmdi-money"></i>
+</div>
+<div class="text">
+<h2>$1,060,386</h2>
+<span>total earnings</span>
+</div>
+</div>
+<div class="overview-chart"><div style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+<canvas id="widgetChart4" height="172" style="display: block; height: 115px; width: 206px;" width="309" class="chartjs-render-monitor"></canvas>
+</div>
+</div>
+</div>
+</div>
+</div>
+ {% endblock %}

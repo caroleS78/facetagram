@@ -1,0 +1,13 @@
+{% extends 'navbar.html.twig' %}
+{% form_theme MatiereForm 'bootstrap_4_layout.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+<link href="{{asset('/css/theme.css')}}" rel="stylesheet" media="all">    
+{% endblock %}
+{% block contenuPrincipal %}
+    {{ parent() }}
+    <h1>MATIERE</h1>
+    {{form(MatiereForm)}}
+
+
+{% endblock %} 
